@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background: linear-gradient(lightgreen, green);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+}
+nav h1{
+    margin: 10px 0 0 30px;
+    letter-spacing: 2px;
+}
+ul li{
+    display: inline-block;
+    margin-left: -5px;
+    margin-right: 1px;
+    padding: 14px 19px;
+    transform: translateY(-15px);
+}
+ul li:hover{
+    background: linear-gradient(green,rgb(14, 230, 14), green);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 14px 18px;
+    transform: translateY(-15px);
+    margin-left: -5px;
+    margin-right: 1px;
+}
+#frame{
+    width: 198.9vh;
+    height: 620px;
+    animation: slider 8s infinite linear;
+}
+
+@keyframes slider {
+    0%{
+        background-image: url('tagaytay.jpg');
+        background-size: 100% 100%;
+    }
+    35%{
+        background-image: url('https://tagaytaycity.ph/wp-content/uploads/2019/10/Peoples-park-8.2.1.jpg');
+        background-size: 100% 100%;
+    }
+    75%{
+        background-image: url('https://jontotheworld.com/wp-content/uploads/2016/06/SAM_5659.jpg');
+        background-size: 100% 100%;
+    } 
+    100%{
+        background-image: url('https://1.bp.blogspot.com/-JFTcCf33TZM/U0kn3IajEBI/AAAAAAAAVtU/ho7Ij9P4rYs/s1600/beaches-in-cavite-boracay-de-cavite-marine-base-resort+(1).jpg');
+        background-size: 100% 100%;
+    }
+}
+#caption{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    /* background-color: brown; */
+    width: 700px;
+    height: 50px;
+    overflow: hidden;
+}
+.text:first-child{
+    animation: text-animation 10s infinite ease-in-out ;
+}
+@keyframes text-animation {
+    0%{
+        margin-top: 0px;
+    }
+    25%{
+        margin-top: -60px;
+    }
+    45%{
+        margin-top: -120px;
+    }
+    75%{
+        margin-top: -240px;
+    }
+    100%{
+        margin-top: -480;
+    }
+}
+
+#footer{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgb(0, 88, 0), rgb(35, 185, 35)) ;
+    box-shadow: 0 0 5px black;
+}
+#copyright{
+    margin-top: 50px ;
+    margin-left: 10px;
+}
